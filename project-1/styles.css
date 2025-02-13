@@ -1,19 +1,102 @@
+
+@font-face {
+    font-family: "lucette";
+    src: url("Lucette-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "karrik";
+    src: url("Karrik-Regular.woff.webloc") format("webloc");
+    font-weight: normal;
+    font-style: normal;
+}
+    
+/*
+@font-face {
+    font-family: "worksans";
+    src: url("WorkSans-Medium.woff2.webloc") format("webloc");
+    font-weight: normal;
+    font-style: normal;
+}
+    */
+
+body{
+    background-color: #fff1e5;
+    text-align: center;
+    }
+
+
 h1{
-    font-family: Helvetica;
+    font-family: "karrik";
+    position:fixed;
+    left:0px;
+    bottom: 748px;
+    height:30px;
+    width:100%;
+    background:#fff1e5;
 }
 
 p {
-    font-family: Helvetica;
+    font-family: "lucette";
     font-size: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+
 }
 
-#la {
-    font-family: Arial, Helvetica, sans-serif;
+.la {
+    text-align: center;
+    font-size: medium;
 }
 
-#lingma {
-    text-align: right;
-    
+.lingma {
+    text-align: center;
+    font-size: medium;   
+    padding-top: 0px;
+}
+
+.husbandroute {
+    color: #a3020d;
+    font-family: "karrik";
+    font-size: 48px;
+}
+
+.boyfriendroute {
+    color: #5b48ad;
+    font-family: "karrik";
+    font-size: 48px;
+
+}
+
+.home {
+    color:rgb(0, 0, 0);
+    font-family: "karrik"; 
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+background:#fff1e5;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color:rgb(222, 203, 185)
+}
+
+.smaller{
+    font-family: "lucette";
+    font-size: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    bottom: 100px;
 }
 
 
@@ -24,12 +107,3 @@ p {
 
 
 
-a {
-    font-family: Helvetica;
-    text-decoration: none;
-    color: black
-}
-
-a:hover {
-    color:blue
-}
