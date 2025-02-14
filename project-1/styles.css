@@ -23,27 +23,23 @@
     */
 
 body{
-    background-color: #fff1e5;
+    background-color: rgb(74, 111, 167);
     text-align: center;
     }
 
 
 h1{
     font-family: "karrik";
-    position:fixed;
-    left:0px;
-    bottom: 748px;
-    height:30px;
-    width:100%;
-    background:#fff1e5;
+    color: rgb(0, 0, 0);
 }
 
 p {
     font-family: "lucette";
+    color:rgb(255, 236, 179);
     font-size: 50px;
     padding-left: 100px;
     padding-right: 100px;
-    padding-top: 20px;
+    padding-top: 10px;
 
 }
 
@@ -59,16 +55,15 @@ p {
 }
 
 .husbandroute {
-    color: #a3020d;
+    color: #002f9c;
     font-family: "karrik";
     font-size: 48px;
 }
 
 .boyfriendroute {
-    color: #5b48ad;
+    color: #832140;
     font-family: "karrik";
     font-size: 48px;
-
 }
 
 .home {
@@ -79,7 +74,7 @@ p {
     bottom:0px;
     height:30px;
     width:100%;
-background:#fff1e5;
+    background:rgb(74, 111, 167);
 }
 
 
@@ -88,22 +83,119 @@ a {
 }
 
 a:hover {
-    color:rgb(222, 203, 185)
+    color:rgb(51, 84, 133);
 }
 
+/*
 .smaller{
     font-family: "lucette";
+    color: rgb(255, 236, 179);
     font-size: 30px;
     padding-left: 100px;
     padding-right: 100px;
     bottom: 100px;
 }
+*/
 
+.htext{
+    color: rgba(18, 25, 52, 0.712);
+    font-family: "lucette";
+    font-size: 30px;
+    text-align: left;
+    padding-left: 150px;
+}
+
+.hcry1{
+    color: rgba(18, 25, 52, 0.712);
+    font-family: "lucette";
+    font-size: 12px;
+    text-align: left;
+    padding-left: 150px;
+}
+
+.hcry2{
+    color: rgba(18, 25, 52, 0.712);
+    font-family: "lucette";
+    font-size: 14px;
+    text-align: left;
+    padding-left: 150px;
+}
+
+.rtext{
+    color: rgba(236, 240, 255, 0.712);
+    font-family: "lucette";
+    font-size: 30px;
+    text-align: right;
+    padding-right: 150px;
+}
+
+.tomorrow{
+    font-family: "karrik";
+        background-image: linear-gradient(90deg, #FFB03A, rgb(75, 113, 170));
+        background-clip: text;
+        color: transparent;
+        font-size: 20px;
+}
 
 .sunset{
-    background-image: linear-gradient(#ff4a00, #01186d);
-    height:1000px;
+    background-image: linear-gradient(rgb(75, 113, 170),#ff9100);
+    }
+
+.sunset2{
+        background-image: linear-gradient(-360deg,rgb(75, 113, 170),#ff9100);
     }
 
 
+.bf1{
+    color: rgb(255, 255, 255);
+    font-family: "lucette";
+    font-size: 30px;
+    text-align: left;
+    padding-left: 150px;
+    text-shadow: -1px -1px 0 #ff0000, 1px -1px 0 #ff0000, -1px 1px 0 #ff0000, 1px 1px 0 #ff0000;
+}
 
+.bf2{
+    color: rgb(200, 255, 133);
+    font-family: "lucette";
+    font-size: 30px;
+    text-align: left;
+    padding-left: 150px;
+    text-shadow: -1px -1px 0 #380017, 1px -1px 0 #380017, -1px 1px 0 #380017, 1px 1px 0 #380017;
+}
+
+.bf3{
+    color: rgb(86, 204, 255);
+    font-family: "lucette";
+    font-size: 30px;
+    text-align: left;
+    padding-left: 150px;
+    text-shadow: -1px -1px 0 #100f6d, 1px -1px 0 #100f6d, -1px 1px 0 #380017, 1px 1px 0 #380017;
+}
+
+.bf4{
+    color: rgb(255, 211, 129);
+    font-family: "lucette";
+    font-size: 30px;
+    text-align: left;
+    padding-left: 150px;
+    text-shadow: -1px -1px 0 #44a408, 1px -1px 0 #44a408, -1px 1px 0 #44a408, 1px 1px 0 #44a408;
+}
+
+.bf5{
+    color: rgb(150, 142, 215);
+    font-family: "lucette";
+    font-size: 30px;
+    text-align: left;
+    padding-left: 150px;
+    text-shadow: -1px -1px 0 #8a0000, 1px -1px 0 #8a0000, -1px 1px 0 #8a0000, 1px 1px 0 #8a0000;
+}
+
+.bf6{
+    color: rgb(255, 170, 254);
+    font-family: "lucette";
+    font-size: 30px;
+    text-align: left;
+    padding-left: 150px;
+    text-shadow: -1px -1px 0 #014235, 1px -1px 0 #014235, -1px 1px 0 #014235, 1px 1px 0 #014235;
+}
