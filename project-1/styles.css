@@ -86,6 +86,12 @@ a:hover {
     color:rgb(51, 84, 133);
 }
 
+.boyfriendroute:hover{
+    background-image: linear-gradient(90deg, #FFB03A, rgb(51, 85, 137));
+        background-clip: text;
+        color: transparent;
+}
+
 /*
 .smaller{
     font-family: "lucette";
