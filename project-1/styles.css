@@ -35,7 +35,7 @@ h1{
 
 p {
     font-family: "lucette";
-    color:rgb(255, 236, 179);
+    color:rgb(255, 243, 209);
     font-size: 50px;
     padding-left: 100px;
     padding-right: 100px;
@@ -55,13 +55,13 @@ p {
 }
 
 .husbandroute {
-    color: #002f9c;
+    color: #013ac0;
     font-family: "karrik";
     font-size: 48px;
 }
 
 .boyfriendroute {
-    color: #832140;
+    color: #FFB03A;
     font-family: "karrik";
     font-size: 48px;
 }
