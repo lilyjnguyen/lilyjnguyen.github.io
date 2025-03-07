@@ -1,0 +1,223 @@
+/* Version 2: Full Width and Typographic */
+@font-face {
+    font-family: "intrumental";
+    src: url("InstrumentSerif-Regular.ttf") format(".tff");
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+@font-face {
+    font-family: "Ants";
+    src: url("Ouvrieres/Ouvrieres-affamees.woff") format(".woff");
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  body {
+    /* I'm overriding the default margin and setting it to 0 */
+        margin: 0;
+        cursor: url("mycursor.png"), crosshair;
+      }
+    
+    
+    .container {
+    /* I'm giving this a position:relative so I can position other content within it with position:absolute */
+        position: relative;
+    
+    /* This makes the container 100% of the viewport width */
+        width: 100vw;
+    
+    /* This makes the container 100% of the viewport height */
+        height: 100vh;
+        background-color: rgb(40, 0, 218);
+    }
+    
+    /* Whenever you are trying to position a child element relative to its parent container, you must: */
+    /* 1. Give the parent a position:relative (see line 10) */
+    /* 2. Give the child a position:absolute (see line 29) */
+    /* 3. The top, bottom, left, right properties will now be relative to the parent */
+    
+    
+    h1 {
+    /* I'm giving this a position:absolute so I can position it relative to the container (see line 10) */
+    /* You would give every element within the container a position:absolute */
+    /* Important: Make sure in your HTML that the content is nested between the container div tags */
+        position: absolute;
+     
+    /* This centers the content vertically and horiziontally within the container */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+  h1 {
+    margin: 0; padding: 0;
+    position:absolute;
+    top: 50%; left: 50%;
+    transform:translate(-50%,-50%);
+    font-size: 6em; color:transparent;
+    text-transform:uppercase;
+  }
+  h1 span:nth-child(1){
+    position:absolute;
+    top:0; left:0; color: #ffffff;
+    transition:0.5s;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+    overflow:hidden;
+  }
+  h1:hover span:nth-child(1){
+    transform:translateY(-18px); 
+  }
+  h1 span:nth-child(2){
+    position:absolute;
+    top:0; left:0; color: #ffffff;
+    transition:0.5s;
+    clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+    overflow:hidden;
+  }
+  h1:hover span:nth-child(2){
+    transform:translateY(18px); 
+  }
+  h1 span:nth-child(3){
+    position:absolute;
+    top:50%; left: 0;
+    transform:translateY(-50%) scaleY(0);
+    width: 100%; color: #000;
+    background:linear-gradient(rgb(255, 247, 0), rgb(245, 225, 163));
+    font-size: 0.2em; font-weight: 500;
+
+    text-align:center;
+    padding-left: 20px; margin-left: 15px;
+    transition:0.5s;
+  }
+  h1:hover span:nth-child(3){
+    transform:translateY(-50%) scaleY(1);
+  }
+  
+
+.name{
+    color: #ffffff;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.date{
+    color: #ffffff;
+    position: relative;
+    top: -20px;
+    padding-left: 20px;
+}
+
+.small-text{
+    position: absolute;
+    color: #ffffff;
+    padding-left: 20px;
+    bottom: 10px;
+    
+}
+
+.rock{
+    position: absolute;
+    left:100px;
+    top:200px;
+    scale: 30%;
+    opacity: 0;
+    transition: 1.5s;
+    cursor: url("cursor2.png"), crosshair;
+}
+.rock:hover{
+    opacity: 1;
+}
+
+.rock1{
+    scale: 20%;
+    opacity: 0;
+    transition: 2s;
+    cursor: url("cursor2.png"), crosshair;
+}
+.rock1:hover{
+    opacity: 1;
+}
+
+.rock2{
+    scale: 20%;
+    opacity: 0;
+    transition: 1.5s;
+    cursor: url("cursor2.png"), crosshair;
+}
+.rock2:hover:hover{
+    opacity: 1;
+}
+
+.rock3{
+    position:absolute;
+    scale: 30%;
+    opacity: 0;
+    transition: 2s;
+    cursor: url("cursor2.png"), crosshair;
+}
+.rock3:hover{
+    opacity: 1;
+}
+
+.rock4{
+    position:absolute;
+    right:50px;
+    top:-150px;
+    scale: 30%;
+    opacity: 0;
+    transition: 1s;
+    cursor: url("cursor2.png"), crosshair;
+}
+.rock4:hover{
+    opacity: 1;
+}
+
+.rock5{
+    position:absolute;
+    right:400px;
+    top:-220px;
+    scale: 30%;
+    opacity: 0;
+    transition: 2s;
+    cursor: url("cursor2.png"), crosshair;
+}
+.rock5:hover{
+    opacity: 1;
+}
+
+.rock6{
+    position:absolute;
+    right:360px;
+    scale: 30%;
+    opacity: 0;
+    transition: 1.5s;
+    cursor: url("cursor2.png"), crosshair;
+}
+.rock6:hover{
+    opacity: 1;
+}
+
+.rock7{
+    position:absolute;
+    left:-20px;
+    scale: 45%;
+    opacity: 0;
+    transition: 1s;
+    cursor: url("cursor2.png"), crosshair;
+}
+.rock7:hover{
+    opacity: 1;
+}
+
+.rock8{
+    position:absolute;
+    bottom:-20px;
+    scale: 45%;
+    opacity: 0;
+    transition: 1s;
+    cursor: url("cursor2.png"), crosshair;
+}
+.rock8:hover{
+    opacity: 1;
+}
