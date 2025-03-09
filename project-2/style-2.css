@@ -1,14 +1,14 @@
 /* Version 2: Full Width and Typographic */
 @font-face {
-    font-family: "intrumental";
-    src: url("InstrumentSerif-Regular.ttf") format(".tff");
+    font-family: "instrument";
+    src: url("instrumentserif-regular.woff") format("woff");
     font-style: normal;
     font-weight: normal;
   }
   
 @font-face {
     font-family: "Ants";
-    src: url("Ouvrieres/Ouvrieres-affamees.woff") format(".woff");
+    src: url("Ouvrieres/Ouvrieres-affamees.woff") format("woff");
     font-style: normal;
     font-weight: normal;
   }
@@ -17,6 +17,7 @@
     /* I'm overriding the default margin and setting it to 0 */
         margin: 0;
         cursor: url("mycursor.png"), crosshair;
+        font-family: "instrumental";
       }
     
     
@@ -29,7 +30,7 @@
     
     /* This makes the container 100% of the viewport height */
         height: 100vh;
-        background-color: rgb(40, 0, 218);
+        background: rgb(40, 0, 218);
     }
     
     /* Whenever you are trying to position a child element relative to its parent container, you must: */
@@ -56,8 +57,10 @@
     top: 50%; left: 50%;
     transform:translate(-50%,-50%);
     font-size: 6em; color:transparent;
-    text-transform:uppercase;
+    font-family: "instrument";
+    letter-spacing: 10px;
   }
+
   h1 span:nth-child(1){
     position:absolute;
     top:0; left:0; color: #ffffff;
@@ -85,7 +88,7 @@
     width: 100%; color: #000;
     background:linear-gradient(rgb(255, 247, 0), rgb(245, 225, 163));
     font-size: 0.2em; font-weight: 500;
-
+    letter-spacing: 2px;
     text-align:center;
     padding-left: 20px; margin-left: 15px;
     transition:0.5s;
@@ -99,6 +102,7 @@
     color: #ffffff;
     padding-left: 20px;
     padding-top: 10px;
+    font-family:"ants";
 }
 
 .date{
@@ -106,6 +110,7 @@
     position: relative;
     top: -20px;
     padding-left: 20px;
+    font-family:"ants";
 }
 
 .small-text{
@@ -113,6 +118,7 @@
     color: #ffffff;
     padding-left: 20px;
     bottom: 10px;
+    font-family: "ants";
     
 }
 
@@ -130,9 +136,9 @@
 }
 
 .rock1{
-    scale: 20%;
+    scale: 40%;
     opacity: 0;
-    transition: 2s;
+    transition: 1.5s;
     cursor: url("cursor2.png"), crosshair;
 }
 .rock1:hover{
@@ -140,7 +146,7 @@
 }
 
 .rock2{
-    scale: 20%;
+    scale: 40%;
     opacity: 0;
     transition: 1.5s;
     cursor: url("cursor2.png"), crosshair;
@@ -151,9 +157,11 @@
 
 .rock3{
     position:absolute;
+    top:-50px;
     scale: 30%;
     opacity: 0;
-    transition: 2s;
+    transition: 1.5s;
+    right: -100px;
     cursor: url("cursor2.png"), crosshair;
 }
 .rock3:hover{
@@ -162,8 +170,8 @@
 
 .rock4{
     position:absolute;
-    right:50px;
-    top:-150px;
+    right:-50px;
+    bottom:100px;
     scale: 30%;
     opacity: 0;
     transition: 1s;
@@ -175,7 +183,7 @@
 
 .rock5{
     position:absolute;
-    right:400px;
+    right:600px;
     top:-220px;
     scale: 30%;
     opacity: 0;
@@ -189,6 +197,7 @@
 .rock6{
     position:absolute;
     right:360px;
+    top:-20px;
     scale: 30%;
     opacity: 0;
     transition: 1.5s;
@@ -212,7 +221,7 @@
 
 .rock8{
     position:absolute;
-    bottom:-20px;
+    bottom:-30px;
     scale: 45%;
     opacity: 0;
     transition: 1s;
@@ -221,3 +230,13 @@
 .rock8:hover{
     opacity: 1;
 }
+
+.longcopy{
+    display:none;
+}
+
+.code{
+    display:none;
+}
+
+

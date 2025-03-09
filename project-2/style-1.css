@@ -1,66 +1,126 @@
 /* Version 1: Poster Shape */
 @font-face {
-  font-family: "intrumental";
-  src: url("InstrumentSerif-Regular.ttf") format(".tff");
+  font-family: "instrument";
+  src: url("instrumentserif-regular.woff") format("woff");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "ants";
-  src: url("Ouvrieres/Ouvrieres-affamees.woff") format(".woff");
+  src: url("Ouvrieres/Ouvrieres-rassasiees.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "crazyants";
+  src: url("Ouvrieres/Ouvrieres-agricultrices.woff2") format("woff2");
   font-style: normal;
   font-weight: normal;
 }
 
 .container {
-    background-image: linear-gradient(0deg, rgb(13, 0, 255), #FFB03A, rgb(13, 0, 255));
+    background:  radial-gradient(#e66465, #9198e5, rgb(40, 0, 218));
     width: 500px;
     position:relative;
-    
+    height: 660px; 
+    padding: 20px;
+    margin: auto;
+    margin-top: calc(50vh - 350px);
+}
 
 .title{
-  font-family: "instrumental";
+  font-family: "ants";
   color:rgb(255, 255, 255);
   position: absolute;
-  left: 70px;
+  left: 30px;
   top: 240px;
   font-size: 100px;
+  letter-spacing: 10px;
+  transition: 2s;
+}
+
+.title:hover{
+  font-family: "crazyants";
+  filter:blur(4px);
+  scale:102%;
 }
 
 .name{
-  font-family: "instrumental";
+  font-family: "instrument";
   color:rgb(255, 255, 255);
   position: absolute;
-  left: 250px;
+  left: 240px;
   top: 180px;
-  font-size:10px;
+  font-size:15px;
+  transition: 2s;
+}
+
+.name:hover{
+  filter:blur(2px);
 }
 
 
 .date{
-  font-family: "instrumental";
+  font-family: "instrument";
   color:rgb(255, 255, 255);
   position: absolute;
   left: 240px;
-  top: 240px;
-  font-size: 10px;
+  top: 200px;
+  font-size: 15px;
+  transition:2s;
+}
+
+.date:hover{
+  filter:blur(2px);
 }
 
 .small-text{
-  font-family: "instrumental";
+  font-family: "instrument";
   color:rgb(255, 255, 255);
   position: absolute;
   left: 240px;
   bottom: 100px;
-  font-size: 10px;
+  font-size: 15px;
+  transition:2s;
 }
 
+.small-text:hover{
+  filter:blur(2px);
+}
+
+.images{
+  display:none;
+}
+
+#none{
+  display:none;
+}
+
+#tagline{
+  display: none;
+}
+
+.longcopy{
+  display:none;
+}
+
+.code{
+  display:none;
+}
+
+.grad1{
+  width:500px;
+  position:absolute;
+  height:20px;
+  color:black;
+}
 
   /* METHOD 1: CONTENT-BOX SIZING */
-  /* I want my height to be a total of 700px, but there's a 20px padding all around, so I'm giving it a height of 660px (700 - 20 - 20) */
+  /* I want my height to be a total of 700px, but there's a 20px padding all around, so I'm giving it a height of 660px (700 - 20 - 20) 
     height: 660px; 
-    padding: 20px;
+    padding: 20px; */
 
   /* METHOD 2: BORDER-BOX SIZING */
   /* Alternatively, you can use box-sizing:border-box and set the height to 700px */
@@ -73,10 +133,8 @@
   /* This makes it horizontally centered */
   /* It only works on "display:block" elements */
   /* If it's a position other than static or relative, you must set left and right properties to 0 */ 
-    margin: auto;
+  /*margin: auto;*/
     
   /* This makes it centered vertically */
   /* It's 50% of the height, and subtracting half of the total height of the poster (which is 700px)*/  
-    margin-top: calc(50vh - 350px);
-
-  }  
+  /*margin-top: calc(50vh - 350px);*/

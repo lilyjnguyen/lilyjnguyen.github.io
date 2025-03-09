@@ -1,1 +1,193 @@
-/* Version 3: Ugly */
+@font-face {
+    font-family: "instrument";
+    src: url("instrumentserif-regular.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: "karrik";
+    src: url("Karrik-Regular.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+
+* {
+    box-sizing: border-box;
+    background-color: rgb(234, 255, 0);
+  }
+  
+  
+  body::before {
+      --line: hsl(0 0% 95% / 0.25);
+      content: "";
+      height: 100vh;
+      width: 100vw;
+      position: fixed;
+      background:
+          linear-gradient(90deg, var(--line) 1px, transparent 1px 10vmin) 0 -5vmin / 10vmin 10vmin,
+          linear-gradient(var(--line) 1px, transparent 1px 10vmin) 0 -5vmin / 10vmin 10vmin;
+      mask: linear-gradient(-15deg, transparent 30%, white);
+      top: 0;
+      z-index: -1;
+  }
+  
+  section {
+    display: grid;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  section p {
+    margin: 0;
+    font-size: 2.25rem;
+    color: hsl(249, 100%, 50%);
+    text-align: center;
+    background: linear-gradient(hsl(255, 100%, 50%), hsl(272, 100%, 73%));
+    color: transparent;
+    background-clip: text;
+  }
+  
+  .code {
+    scale: 150%;
+    font-family: "instrument";
+    font-size: 5rem;
+    display: flex;
+    flex-wrap: nowrap;
+    color: hsl(253, 100%, 50%);
+    border-radius: 1rem;
+    background: hsl(0 0% 6%);
+    position: absolute;
+    top:0px;
+    right:80px;
+    justify-content: center;
+    box-shadow: 0 1px hsl(0 0% 100% / 0.25) inset;
+  }
+  
+  .code:hover {
+    cursor: grab;
+  }
+  
+  .letter {
+    font-family: "instrument";
+    display: flex;
+    height: 100%;
+    padding: 5.5rem 1rem;
+  }
+  
+  .letter:focus-visible {
+    outline-color: hsl(0 0% 50% / 0.25);
+    outline-offset: 1rem;
+  }
+  
+  .letter span {
+    scale: calc(var(--active, 0) + 0.5);
+    filter: blur(calc((1 - var(--active, 0)) * 1rem));
+    transition: scale calc(((1 - var(--active, 0)) + 0.2) * 1s), filter calc(((1 - var(--active, 0)) + 0.2) * 1s);
+  }
+  
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .letter:first-of-type {
+    padding-left: 5rem;
+  }
+  .letter:last-of-type {
+    padding-right: 5rem;
+  }
+  
+  :root {
+    --lerp-0: 1; /* === sin(90deg) */
+    --lerp-1: calc(sin(50deg));
+    --lerp-2: calc(sin(45deg));
+    --lerp-3: calc(sin(35deg));
+    --lerp-4: calc(sin(25deg));
+    --lerp-5: calc(sin(15deg));
+  }
+  
+  .letter:is(:hover, :focus-visible) {
+    --active: var(--lerp-0);
+  }
+  .letter:is(:hover, :focus-visible) + .letter,
+  .letter:has(+ .letter:is(:hover, :focus-visible)) {
+    --active: var(--lerp-1);
+  }
+  .letter:is(:hover, :focus-visible) + .letter + .letter,
+  .letter:has(+ .letter + .letter:is(:hover, :focus-visible)) {
+    --active: var(--lerp-2);
+  }
+
+  .images{
+    display:none;
+  }
+
+  .name{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .date{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .small-text{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h1{
+    display:none;
+  }
+
+  .longcopy{
+    font-family: Helvetica;
+    position:absolute;
+    top:300px;
+    display:block;
+      overflow: hidden;
+      border-right: .30em solid rgb(255, 255, 255);
+      border-radius: 4px;
+      white-space: nowrap;
+      animation: 
+        typing 2s steps(20, end) forwards,
+        blinking 1.2s infinite;
+      font-size: 1.6rem;
+      width: 0;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  @keyframes blinking {
+    from { border-color: transparent }
+    to { border-color: rgb(255, 255, 255); }
+  }
+
+  
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    /* font-family: helvetica;
+    font-weight: 100;
+    color: aliceblue;
+    display:inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    white-space: nowrap;
+    width:0;
+    border-right: 0.15em solid #ffffff;
+    animation: typing 2s steps(40, end),  blink-caret .75s step-end infinite;
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }*/
