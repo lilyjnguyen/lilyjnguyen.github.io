@@ -99,7 +99,6 @@
 
 
 
-
 .name{
     color: #ffffff;
     transition: 2s;
@@ -233,16 +232,16 @@
 
 .rock7{
     position:absolute;
-    scale: 100%;
-    right:20px;
-    bottom:-20px;
-    opacity: 0;
+    scale: 50%;
+    right:-50px;
+    bottom:-50px;
+    opacity: 1;
     transition: 0.15s;
     cursor: url("cursor2.png"), crosshair;
 }
 .rock7:hover{
     opacity: 1;
-    scale:110%;
+    scale:60%;
 }
 
 .rock8{

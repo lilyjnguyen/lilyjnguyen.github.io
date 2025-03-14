@@ -43,6 +43,16 @@ p {
 
 }
 
+a{
+    font-family: "lucette";
+    text-decoration: none;
+    color:rgb(255, 243, 209);
+    font-size: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+}
+
 .la {
     text-align: center;
     font-size: medium;
