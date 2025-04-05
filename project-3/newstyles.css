@@ -1,0 +1,77 @@
+#titleimage{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    position: fixed; 
+    top: 0;         
+    left: 0;   
+    margin: 20px; 
+    
+}
+
+#titleimage:hover {
+    cursor: crosshair; /* Changes cursor to a pointer when hovering */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7); /* Adds a glowing effect */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+  }
+  
+  .container {
+    display: flex;
+    width: 100%;
+  }
+  
+  .drawing-area, .reflection-area {
+    width: 50%;
+    height: 100vh;
+  }
+  
+  canvas {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    border: 1px solid #ffffff;
+  }
+
+  #clearButton {
+    position: fixed;
+    bottom: 20px; 
+    left: 690px;
+    transform: translateX(-50%); 
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  #clearButton:hover {
+    color: gray;
+  }
+
+
+  #invertButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    position: fixed;  /* Fix the button to the top-right corner */
+    top: 10px;        /* Position it slightly from the top */
+    right: 10px; 
+}
+
+#invertButton:hover {
+   color: #5c5c5c;
+}
