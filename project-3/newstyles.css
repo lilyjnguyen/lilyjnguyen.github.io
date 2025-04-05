@@ -43,9 +43,9 @@ body {
 
   #clearButton {
     position: fixed;
-    bottom: 20px; 
-    left: 690px;
-    transform: translateX(-50%); 
+    bottom: 20px;       /* 20px from the bottom of the page */
+    left: 50%;          /* Position horizontally at the center of the page */
+    transform: translateX(-50%);  /* Adjust for perfect centering */
     background-color: #000000;
     color: rgb(255, 255, 255);
     border: none;
