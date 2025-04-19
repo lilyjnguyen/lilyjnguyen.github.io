@@ -41,37 +41,4 @@ body {
     border: 1px solid #ffffff;
   }
 
-  #clearButton {
-    position: fixed;
-    bottom: 20px;       /* 20px from the bottom of the page */
-    left: 50%;          /* Position horizontally at the center of the page */
-    transform: translateX(-50%);  /* Adjust for perfect centering */
-    background-color: #000000;
-    color: rgb(255, 255, 255);
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-  }
 
-  #clearButton:hover {
-    color: gray;
-  }
-
-
-  #invertButton {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #000000;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    position: fixed;  /* Fix the button to the top-right corner */
-    top: 10px;        /* Position it slightly from the top */
-    right: 10px; 
-}
-
-#invertButton:hover {
-   color: #5c5c5c;
-}

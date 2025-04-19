@@ -6,38 +6,20 @@
     <title>DIY Rorschach Test</title>
     <link href="newstyles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        .inverted {
+          filter: invert(1) hue-rotate(180deg);
+        }
+      </style>
 </head>
 
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
 <div>
     <a href="../index.html">
     <img src="whitev.png" id="titleimage"> </a>
 </div>
 
-<div class="container">
-    
-    <div class="drawing-area">
-      <canvas id="drawingCanvas"></canvas>
-    </div>
-    
-    <div class="reflection-area">
-      <canvas id="reflectionCanvas"></canvas>
-    </div>
-  
-</div>
-
-<button id="clearButton">CLEAR</button>
-
-<button id="invertButton">INVERT COLORS</button>
-
-<script>
-    const invertButton = document.getElementById('invertButton');
-    let isInverted = false;
-
-    invertButton.addEventListener('click', () => {
-        isInverted = !isInverted; // Toggle the state
-        document.body.style.filter = isInverted ? 'invert(1)' : 'invert(0)';
-    });
-</script>
 
 <script src="script.js"></script>
 </body>
