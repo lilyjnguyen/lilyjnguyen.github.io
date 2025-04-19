@@ -64,8 +64,8 @@ function setup() {
   clearButton = createButton('CLEAR CANVAS');
   clearButton.style('background-color', '#000');
   clearButton.style('color', 'white');
-  clearButton.style('padding', '10px 20px');
-  clearButton.style('border', 'none');
+  clearButton.style('padding', '10px 15px');
+  clearButton.style('border', '1px solid white');   
   clearButton.style('border-radius', '5px');
   positionClearButton();
 
@@ -86,7 +86,6 @@ invertButton.style('color', 'white');
 invertButton.style('padding', '10px 15px');
 invertButton.style('border', '1px solid white');   
 invertButton.style('border-radius', '5px');
-invertButton.style('font-weight', 'bold');
 
   invertButton.mousePressed(() => {
     document.body.classList.toggle('inverted');
