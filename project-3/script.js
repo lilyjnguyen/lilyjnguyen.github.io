@@ -23,7 +23,7 @@ function setup() {
   colorPicker = createColorPicker('#ffffff');
   colorPicker.position(leftOffset, verticalOffset-170);
 
-  // Brush size
+  // Brush size slider
   weightLabel = createDiv('BRUSH SIZE');
   weightLabel.position(leftOffset, verticalOffset - 100);
   weightLabel.style('color', 'white');
@@ -46,7 +46,7 @@ function setup() {
 
   
 
-  // Brushes
+  // Brush styles
   brushModeLabel = createDiv('BRUSH MODE');
   brushModeLabel.position(leftOffset, verticalOffset + 70);
   brushModeLabel.style('color', 'white');
@@ -56,11 +56,11 @@ function setup() {
   brushSelector = createSelect();
   brushSelector.option('Oval');
   brushSelector.option('Spray');
-  brushSelector.selected('Oval');
+  brushSelector.selected('Spray');
   brushSelector.position(leftOffset, verticalOffset + 90);
 
 
-  // Clear Button
+  // Clear button
   clearButton = createButton('CLEAR CANVAS');
   clearButton.style('background-color', '#000');
   clearButton.style('color', 'white');
@@ -76,7 +76,7 @@ function setup() {
   });
 
 
-  // Invert Button
+  // Invert button
   invertButton = createButton('INVERT COLORS');
 invertButton.style('position', 'absolute');
 invertButton.style('top', '20px');
