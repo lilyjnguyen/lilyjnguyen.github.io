@@ -40,9 +40,9 @@ function draw() {
 
     if (decayAmount > threshold) {
       let age = map(decayAmount - threshold, 0, 1 - threshold, 0, 1);
-      let fresh = color(255, 0, 0);      // Red
-      let moldy = color(40, 80, 40);     // Green
-      let rotten = color(50, 30, 10);    // Brown
+      let fresh = color(255, 0, 0);  //red   
+      let moldy = color(40, 80, 40);    //green
+      let rotten = color(50, 30, 10);   //brown
 
       let intermediate = lerpColor(fresh, moldy, constrain(age * 2, 0, 1));
       p.color = lerpColor(intermediate, rotten, constrain((age - 0.5) * 2, 0, 1));
@@ -107,7 +107,7 @@ function drawCountdownMessage(elapsed) {
   fill(255);
   textSize(28);
   textAlign(CENTER, CENTER);
-  text("The decay has been completed.", width / 2, height / 2 + 80);
+  text("Full decay has been completed.", width / 2, height / 2 + 80);
 }
 }
 
