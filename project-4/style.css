@@ -1,4 +1,4 @@
-#title{
+#homeButton{
     display: flex;
     flex-direction: row;
     width: 600px;
@@ -6,5 +6,6 @@
     top: 0;         
     left: 0;   
     margin: 20px; 
-    transform: scale(0.2);
+    transform: scale(0.1);
 }
+
